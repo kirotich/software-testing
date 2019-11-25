@@ -1,0 +1,14 @@
+{
+  "name": "nightwatch-tests",
+  "version": "1.0.0",
+  "description": "ui tests using nightwatchjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kirotich",
+  "license": "ISC",
+  "devDependencies": {
+    "nightwatch": "^1.3.1"
+  }
+}
