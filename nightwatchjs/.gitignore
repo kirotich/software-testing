@@ -11,6 +11,6 @@ selenium-server.log
 # exclude chromedriver as its 12MB and changes frequently!
 # nightwatch/chromedriver
 
-reports
-screenshots
-.env
+# reports
+# screenshots
+# .env

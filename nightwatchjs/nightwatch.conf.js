@@ -22,7 +22,8 @@ module.exports = {
     "test_settings": {
       'default': {
         screenshots : {
-          enabled : true
+          enabled : true,
+          path : './reports/screenshots'
         },
         globals : {
           waitForConditionTimeout : 15000
@@ -41,7 +42,8 @@ module.exports = {
      'firefox': {
        extends: 'selenium',
        screenshots : {
-         enabled : true
+         enabled : true,
+         path : './reports/screenshots'
        },
        desiredCapabilities: {
           browserName: 'firefox',
