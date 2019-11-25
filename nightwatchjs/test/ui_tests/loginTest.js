@@ -14,10 +14,11 @@ module.exports = {
         .setValue('@pwd', '12345')
         .login()
         .assert.containsText('#case_login .success', 'WELCOME :)')
+        .saveScreenshot(`./reports/${meta}success.png`)
     },
     
     'invalid credential' : function( browser ){
-    const page = browser.page.loginPOM();
+    const page = browser.page.loginPOM(); 
     const meta = browser.options.desiredCapabilities.browserName;
     
     page
@@ -27,6 +28,7 @@ module.exports = {
         .setValue('@pwd', 'wrongpass')
         .login()
         .assert.containsText('#case_login .error', 'ACCESS DENIED!')
+        .saveScreenshot(`./reports/${meta}error.png`)
   },
     after: function (browser) {
         console.log("Tests complete");  
