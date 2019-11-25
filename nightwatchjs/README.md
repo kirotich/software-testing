@@ -4,5 +4,6 @@ Run tests
 ```sh
 $ git clone https://github.com/kirotich/software-testing.git
 $ cd software-testing/nightwatchjs
+$ npm install
 $ npm test
 ```
