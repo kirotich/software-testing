@@ -15,7 +15,19 @@ module.exports = {
         .login()
         .assert.containsText('#case_login .success', 'WELCOME :)')
     },
-
+    
+    'invalid credential' : function( browser ){
+    const page = browser.page.loginPOM();
+    const meta = browser.options.desiredCapabilities.browserName;
+    
+    page
+        .navigate()
+        .validateForm()
+        .setValue('@username', 'admin')
+        .setValue('@pwd', 'wrongpass')
+        .login()
+        .assert.containsText('#case_login .error', 'ACCESS DENIED!')
+  },
     after: function (browser) {
         console.log("Tests complete");  
         browser.end();
