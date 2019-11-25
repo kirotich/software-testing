@@ -4,7 +4,7 @@
   "description": "ui tests using nightwatchjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nightwatch -e chrome,firefox --config nightwatch.conf.js"
   },
   "author": "kirotich",
   "license": "ISC",
