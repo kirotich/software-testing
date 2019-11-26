@@ -1,7 +1,7 @@
 const loginCommands = {
     // validate login form
     validateForm : function () {
-        return this.waitForElementVisible('body', 1000)
+        return this.waitForElementVisible('body', 5000)
             .verify.visible('@username')
             .verify.visible('@pwd')
             .verify.value('@loginButton', 'Login')

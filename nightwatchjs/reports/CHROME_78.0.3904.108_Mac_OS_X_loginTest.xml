@@ -5,9 +5,15 @@
 
   <testsuite name="loginTest"
     errors="0" failures="0" hostname="" id="" package="loginTest" skipped="0"
-    tests="2" time="5.514" timestamp="">
+    tests="2" time="7.400" timestamp="">
   
-    <testcase name="valid credential" classname="loginTest" time="3.301" assertions="5">
+    <testcase name="valid credential" classname="loginTest" time="4.156" assertions="8">
+
+    
+
+    
+
+    
 
     
 
@@ -20,7 +26,15 @@
     
     </testcase>
   
-    <testcase name="invalid credential" classname="loginTest" time="2.213" assertions="5">
+    <testcase name="invalid credential" classname="loginTest" time="3.244" assertions="9">
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -34,6 +48,13 @@
     </testcase>
   
 
+  
+    <system-err>
+      [0;31m  RangeError [ERR_OUT_OF_RANGE]: The value of &#34;offset&#34; is out of range. It must be &gt;= 0 and &lt;= 14868476. Received -1863680[0m
+[0;90m       at boundsError (internal/buffer.js:54:9)
+       at Buffer.readUInt32BE (internal/buffer.js:201:5)
+       at process.internalTickCallback (internal/process/next_tick.js:77:7)[0m
+    </system-err>
   
 
   

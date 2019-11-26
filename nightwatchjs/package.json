@@ -4,7 +4,7 @@
   "description": "ui tests using nightwatchjs",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch -e chrome,firefox --config nightwatch.conf.js"
+    "test": "nightwatch -e chrome --config nightwatch.conf.js"
   },
   "author": "kirotich",
   "license": "ISC",
@@ -12,6 +12,8 @@
     "chromedriver": "^78.0.1",
     "geckodriver": "^1.19.1",
     "nightwatch": "^1.3.1",
+    "nightwatch-vrt": "^0.2.10",
     "selenium-server": "^3.141.59"
-  }
+  },
+  "dependencies": {}
 }
